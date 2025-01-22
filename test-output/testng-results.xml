@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-22T15:54:17 IST" name="Contact List App Suite" finished-at="2025-01-22T15:55:43 IST" duration-ms="86841">
+    <groups>
+      <group name="Signup">
+        <method signature="SignUpTest.testHomePageRedirectsToAddUserPage()[pri:3, instance:JAT.MiniProject2.SignUpTest@33d512c1]" name="testHomePageRedirectsToAddUserPage" class="JAT.MiniProject2.SignUpTest"/>
+        <method signature="SignUpTest.testSignUpBtnClickability()[pri:2, instance:JAT.MiniProject2.SignUpTest@33d512c1]" name="testSignUpBtnClickability" class="JAT.MiniProject2.SignUpTest"/>
+        <method signature="SignUpTest.testSignUpBtnVisibility()[pri:1, instance:JAT.MiniProject2.SignUpTest@33d512c1]" name="testSignUpBtnVisibility" class="JAT.MiniProject2.SignUpTest"/>
+      </group> <!-- Signup -->
+      <group name="Edit Contact">
+        <method signature="ContactsEditingTest.testEditContactDetails()[pri:2, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" name="testEditContactDetails" class="JAT.MiniProject2.ContactsEditingTest"/>
+        <method signature="ContactsEditingTest.testFieldChangesDontAffectOtherFields()[pri:3, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" name="testFieldChangesDontAffectOtherFields" class="JAT.MiniProject2.ContactsEditingTest"/>
+        <method signature="ContactsEditingTest.testRedirectsToContactDetailsPage()[pri:0, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" name="testRedirectsToContactDetailsPage" class="JAT.MiniProject2.ContactsEditingTest"/>
+        <method signature="ContactsEditingTest.verifySaveWithEmptyFields()[pri:4, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" name="verifySaveWithEmptyFields" class="JAT.MiniProject2.ContactsEditingTest"/>
+      </group> <!-- Edit Contact -->
+      <group name="Contact Display">
+        <method signature="ContactDisplayTest.testContactDetailsDisplayedCorrectly()[pri:1, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" name="testContactDetailsDisplayedCorrectly" class="JAT.MiniProject2.ContactDisplayTest"/>
+        <method signature="ContactDisplayTest.testContactsSortedByLastName()[pri:2, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" name="testContactsSortedByLastName" class="JAT.MiniProject2.ContactDisplayTest"/>
+        <method signature="ContactDisplayTest.testPhoneNumberDisplay()[pri:3, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" name="testPhoneNumberDisplay" class="JAT.MiniProject2.ContactDisplayTest"/>
+      </group> <!-- Contact Display -->
+      <group name="Logout">
+        <method signature="LogoutTest.testLogoutButtonIsVisible()[pri:1, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f]" name="testLogoutButtonIsVisible" class="JAT.MiniProject2.LogoutTest"/>
+        <method signature="LogoutTest.testLogoutRedirectsToLoginPage()[pri:2, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f]" name="testLogoutRedirectsToLoginPage" class="JAT.MiniProject2.LogoutTest"/>
+      </group> <!-- Logout -->
+      <group name="Login">
+        <method signature="LoginTest.testLoginButtonClickability()[pri:2, instance:JAT.MiniProject2.LoginTest@233795b6]" name="testLoginButtonClickability" class="JAT.MiniProject2.LoginTest"/>
+        <method signature="LoginTest.testLoginButtonVisibility()[pri:1, instance:JAT.MiniProject2.LoginTest@233795b6]" name="testLoginButtonVisibility" class="JAT.MiniProject2.LoginTest"/>
+        <method signature="LoginTest.verifyInvalidLogin()[pri:3, instance:JAT.MiniProject2.LoginTest@233795b6]" name="verifyInvalidLogin" class="JAT.MiniProject2.LoginTest"/>
+        <method signature="LoginTest.verifyValidLogin()[pri:4, instance:JAT.MiniProject2.LoginTest@233795b6]" name="verifyValidLogin" class="JAT.MiniProject2.LoginTest"/>
+      </group> <!-- Login -->
+      <group name="Contact Delete">
+        <method signature="ContactDeletionTest.testDeleteContactDoesNotAffectOtherContacts()[pri:3, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" name="testDeleteContactDoesNotAffectOtherContacts" class="JAT.MiniProject2.ContactDeletionTest"/>
+        <method signature="ContactDeletionTest.testDeleteContactShowsConfirmationAlert()[pri:1, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" name="testDeleteContactShowsConfirmationAlert" class="JAT.MiniProject2.ContactDeletionTest"/>
+        <method signature="ContactDeletionTest.testDeleteSingleContact()[pri:2, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" name="testDeleteSingleContact" class="JAT.MiniProject2.ContactDeletionTest"/>
+      </group> <!-- Contact Delete -->
+      <group name="Contact">
+        <method signature="ContactTests.testAddContactWithMandatoryFields()[pri:1, instance:JAT.MiniProject2.ContactTests@7eac9008]" name="testAddContactWithMandatoryFields" class="JAT.MiniProject2.ContactTests"/>
+        <method signature="ContactTests.testAddContactWithoutMandatoryFields()[pri:2, instance:JAT.MiniProject2.ContactTests@7eac9008]" name="testAddContactWithoutMandatoryFields" class="JAT.MiniProject2.ContactTests"/>
+        <method signature="ContactTests.testAddDuplicateContact()[pri:3, instance:JAT.MiniProject2.ContactTests@7eac9008]" name="testAddDuplicateContact" class="JAT.MiniProject2.ContactTests"/>
+        <method signature="ContactTests.testInvalidBirthDateFormat()[pri:4, instance:JAT.MiniProject2.ContactTests@7eac9008]" name="testInvalidBirthDateFormat" class="JAT.MiniProject2.ContactTests"/>
+      </group> <!-- Contact -->
+    </groups>
+    <test started-at="2025-01-22T15:54:17 IST" name="Signup Function" finished-at="2025-01-22T15:54:21 IST" duration-ms="3968">
+      <class name="JAT.MiniProject2.SignUpTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:JAT.MiniProject2.SignUpTest@33d512c1]" started-at="2025-01-22T15:54:17 IST" name="setup" finished-at="2025-01-22T15:54:20 IST" duration-ms="3103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSignUpBtnVisibility()[pri:1, instance:JAT.MiniProject2.SignUpTest@33d512c1]" started-at="2025-01-22T15:54:20 IST" name="testSignUpBtnVisibility" finished-at="2025-01-22T15:54:20 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpBtnVisibility -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.SignUpTest@33d512c1]" started-at="2025-01-22T15:54:20 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:20 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSignUpBtnVisibility status=SUCCESS method=SignUpTest.testSignUpBtnVisibility()[pri:1, instance:JAT.MiniProject2.SignUpTest@33d512c1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="testSignUpBtnClickability()[pri:2, instance:JAT.MiniProject2.SignUpTest@33d512c1]" started-at="2025-01-22T15:54:20 IST" name="testSignUpBtnClickability" finished-at="2025-01-22T15:54:20 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpBtnClickability -->
+        <test-method signature="testHomePageRedirectsToAddUserPage()[pri:3, instance:JAT.MiniProject2.SignUpTest@33d512c1]" started-at="2025-01-22T15:54:20 IST" name="testHomePageRedirectsToAddUserPage" finished-at="2025-01-22T15:54:20 IST" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageRedirectsToAddUserPage -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.SignUpTest@33d512c1]" started-at="2025-01-22T15:54:20 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSignUpBtnClickability status=SUCCESS method=SignUpTest.testSignUpBtnClickability()[pri:2, instance:JAT.MiniProject2.SignUpTest@33d512c1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.SignUpTest@33d512c1]" started-at="2025-01-22T15:54:20 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:20 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testHomePageRedirectsToAddUserPage status=SUCCESS method=SignUpTest.testHomePageRedirectsToAddUserPage()[pri:3, instance:JAT.MiniProject2.SignUpTest@33d512c1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:JAT.MiniProject2.SignUpTest@33d512c1]" started-at="2025-01-22T15:54:20 IST" name="tearDown" finished-at="2025-01-22T15:54:21 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- JAT.MiniProject2.SignUpTest -->
+    </test> <!-- Signup Function -->
+    <test started-at="2025-01-22T15:54:21 IST" name="Login Fuunctionality" finished-at="2025-01-22T15:54:27 IST" duration-ms="6215">
+      <class name="JAT.MiniProject2.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:21 IST" name="setup" finished-at="2025-01-22T15:54:24 IST" duration-ms="2969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginButtonVisibility()[pri:1, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:24 IST" name="testLoginButtonVisibility" finished-at="2025-01-22T15:54:24 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginButtonVisibility -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:24 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginButtonVisibility status=SUCCESS method=LoginTest.testLoginButtonVisibility()[pri:1, instance:JAT.MiniProject2.LoginTest@233795b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="testLoginButtonClickability()[pri:2, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:24 IST" name="testLoginButtonClickability" finished-at="2025-01-22T15:54:24 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginButtonClickability -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:24 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginButtonClickability status=SUCCESS method=LoginTest.testLoginButtonClickability()[pri:2, instance:JAT.MiniProject2.LoginTest@233795b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="verifyInvalidLogin()[pri:3, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:24 IST" name="verifyInvalidLogin" finished-at="2025-01-22T15:54:24 IST" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidLogin -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:24 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidLogin status=SUCCESS method=LoginTest.verifyInvalidLogin()[pri:3, instance:JAT.MiniProject2.LoginTest@233795b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="verifyValidLogin()[pri:4, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:24 IST" name="verifyValidLogin" finished-at="2025-01-22T15:54:27 IST" duration-ms="2254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLogin -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:27 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidLogin status=SUCCESS method=LoginTest.verifyValidLogin()[pri:4, instance:JAT.MiniProject2.LoginTest@233795b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:JAT.MiniProject2.LoginTest@233795b6]" started-at="2025-01-22T15:54:27 IST" name="tearDown" finished-at="2025-01-22T15:54:27 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- JAT.MiniProject2.LoginTest -->
+    </test> <!-- Login Fuunctionality -->
+    <test started-at="2025-01-22T15:54:27 IST" name="Contact Addition" finished-at="2025-01-22T15:54:52 IST" duration-ms="24963">
+      <class name="JAT.MiniProject2.ContactTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:27 IST" name="setUp" finished-at="2025-01-22T15:54:31 IST" duration-ms="4060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddContactWithMandatoryFields()[pri:1, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:31 IST" name="testAddContactWithMandatoryFields" finished-at="2025-01-22T15:54:35 IST" duration-ms="4643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactWithMandatoryFields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:35 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:35 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddContactWithMandatoryFields status=SUCCESS method=ContactTests.testAddContactWithMandatoryFields()[pri:1, instance:JAT.MiniProject2.ContactTests@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="testAddContactWithoutMandatoryFields()[pri:2, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:35 IST" name="testAddContactWithoutMandatoryFields" finished-at="2025-01-22T15:54:39 IST" duration-ms="3608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddContactWithoutMandatoryFields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:39 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:39 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddContactWithoutMandatoryFields status=SUCCESS method=ContactTests.testAddContactWithoutMandatoryFields()[pri:2, instance:JAT.MiniProject2.ContactTests@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="testAddDuplicateContact()[pri:3, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:39 IST" name="testAddDuplicateContact" finished-at="2025-01-22T15:54:48 IST" duration-ms="8746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddDuplicateContact -->
+        <test-method signature="testInvalidBirthDateFormat()[pri:4, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:48 IST" name="testInvalidBirthDateFormat" finished-at="2025-01-22T15:54:52 IST" duration-ms="3757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidBirthDateFormat -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:48 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:48 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddDuplicateContact status=SUCCESS method=ContactTests.testAddDuplicateContact()[pri:3, instance:JAT.MiniProject2.ContactTests@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:52 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:54:52 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidBirthDateFormat status=SUCCESS method=ContactTests.testInvalidBirthDateFormat()[pri:4, instance:JAT.MiniProject2.ContactTests@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:JAT.MiniProject2.ContactTests@7eac9008]" started-at="2025-01-22T15:54:52 IST" name="tearDown" finished-at="2025-01-22T15:54:52 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- JAT.MiniProject2.ContactTests -->
+    </test> <!-- Contact Addition -->
+    <test started-at="2025-01-22T15:54:52 IST" name="Contact Display" finished-at="2025-01-22T15:55:01 IST" duration-ms="9422">
+      <class name="JAT.MiniProject2.ContactDisplayTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" started-at="2025-01-22T15:54:52 IST" name="setUp" finished-at="2025-01-22T15:54:56 IST" duration-ms="4570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testContactDetailsDisplayedCorrectly()[pri:1, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" started-at="2025-01-22T15:54:56 IST" name="testContactDetailsDisplayedCorrectly" finished-at="2025-01-22T15:55:01 IST" duration-ms="4583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactDetailsDisplayedCorrectly -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" started-at="2025-01-22T15:55:01 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:01 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactDetailsDisplayedCorrectly status=SUCCESS method=ContactDisplayTest.testContactDetailsDisplayedCorrectly()[pri:1, instance:JAT.MiniProject2.ContactDisplayTest@198b6731] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="testContactsSortedByLastName()[pri:2, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" started-at="2025-01-22T15:55:01 IST" name="testContactsSortedByLastName" finished-at="2025-01-22T15:55:01 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactsSortedByLastName -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" started-at="2025-01-22T15:55:01 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:01 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testContactsSortedByLastName status=SUCCESS method=ContactDisplayTest.testContactsSortedByLastName()[pri:2, instance:JAT.MiniProject2.ContactDisplayTest@198b6731] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="testPhoneNumberDisplay()[pri:3, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" started-at="2025-01-22T15:55:01 IST" name="testPhoneNumberDisplay" finished-at="2025-01-22T15:55:01 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNumberDisplay -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" started-at="2025-01-22T15:55:01 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:01 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPhoneNumberDisplay status=SUCCESS method=ContactDisplayTest.testPhoneNumberDisplay()[pri:3, instance:JAT.MiniProject2.ContactDisplayTest@198b6731] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:JAT.MiniProject2.ContactDisplayTest@198b6731]" started-at="2025-01-22T15:55:01 IST" name="tearDown" finished-at="2025-01-22T15:55:01 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- JAT.MiniProject2.ContactDisplayTest -->
+    </test> <!-- Contact Display -->
+    <test started-at="2025-01-22T15:55:01 IST" name="Contact Editing" finished-at="2025-01-22T15:55:19 IST" duration-ms="18196">
+      <class name="JAT.MiniProject2.ContactsEditingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:01 IST" name="setup" finished-at="2025-01-22T15:55:05 IST" duration-ms="3516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRedirectsToContactDetailsPage()[pri:0, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:05 IST" name="testRedirectsToContactDetailsPage" finished-at="2025-01-22T15:55:07 IST" duration-ms="2351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRedirectsToContactDetailsPage -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:07 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:07 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRedirectsToContactDetailsPage status=SUCCESS method=ContactsEditingTest.testRedirectsToContactDetailsPage()[pri:0, instance:JAT.MiniProject2.ContactsEditingTest@302552ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="testEditContactDetails()[pri:2, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:07 IST" name="testEditContactDetails" finished-at="2025-01-22T15:55:12 IST" duration-ms="5232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditContactDetails -->
+        <test-method signature="testFieldChangesDontAffectOtherFields()[pri:3, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:12 IST" name="testFieldChangesDontAffectOtherFields" finished-at="2025-01-22T15:55:17 IST" duration-ms="5075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFieldChangesDontAffectOtherFields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:12 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:12 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEditContactDetails status=SUCCESS method=ContactsEditingTest.testEditContactDetails()[pri:2, instance:JAT.MiniProject2.ContactsEditingTest@302552ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="verifySaveWithEmptyFields()[pri:4, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:17 IST" name="verifySaveWithEmptyFields" finished-at="2025-01-22T15:55:19 IST" duration-ms="1877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySaveWithEmptyFields -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:17 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:17 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testFieldChangesDontAffectOtherFields status=SUCCESS method=ContactsEditingTest.testFieldChangesDontAffectOtherFields()[pri:3, instance:JAT.MiniProject2.ContactsEditingTest@302552ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:19 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySaveWithEmptyFields status=SUCCESS method=ContactsEditingTest.verifySaveWithEmptyFields()[pri:4, instance:JAT.MiniProject2.ContactsEditingTest@302552ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:JAT.MiniProject2.ContactsEditingTest@302552ec]" started-at="2025-01-22T15:55:19 IST" name="tearDown" finished-at="2025-01-22T15:55:19 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- JAT.MiniProject2.ContactsEditingTest -->
+    </test> <!-- Contact Editing -->
+    <test started-at="2025-01-22T15:55:19 IST" name="Contact Deletion Function" finished-at="2025-01-22T15:55:36 IST" duration-ms="17117">
+      <class name="JAT.MiniProject2.ContactDeletionTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" started-at="2025-01-22T15:55:19 IST" name="setUp" finished-at="2025-01-22T15:55:24 IST" duration-ms="4614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeleteContactShowsConfirmationAlert()[pri:1, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" started-at="2025-01-22T15:55:24 IST" name="testDeleteContactShowsConfirmationAlert" finished-at="2025-01-22T15:55:26 IST" duration-ms="2280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteContactShowsConfirmationAlert -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" started-at="2025-01-22T15:55:26 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDeleteContactShowsConfirmationAlert status=SUCCESS method=ContactDeletionTest.testDeleteContactShowsConfirmationAlert()[pri:1, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="testDeleteSingleContact()[pri:2, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" started-at="2025-01-22T15:55:26 IST" name="testDeleteSingleContact" finished-at="2025-01-22T15:55:31 IST" duration-ms="4892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteSingleContact -->
+        <test-method signature="testDeleteContactDoesNotAffectOtherContacts()[pri:3, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" started-at="2025-01-22T15:55:31 IST" name="testDeleteContactDoesNotAffectOtherContacts" finished-at="2025-01-22T15:55:36 IST" duration-ms="4991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteContactDoesNotAffectOtherContacts -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" started-at="2025-01-22T15:55:31 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDeleteSingleContact status=SUCCESS method=ContactDeletionTest.testDeleteSingleContact()[pri:2, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" started-at="2025-01-22T15:55:36 IST" name="tearDown" finished-at="2025-01-22T15:55:36 IST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6]" started-at="2025-01-22T15:55:36 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:36 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDeleteContactDoesNotAffectOtherContacts status=SUCCESS method=ContactDeletionTest.testDeleteContactDoesNotAffectOtherContacts()[pri:3, instance:JAT.MiniProject2.ContactDeletionTest@fbd1f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+      </class> <!-- JAT.MiniProject2.ContactDeletionTest -->
+    </test> <!-- Contact Deletion Function -->
+    <test started-at="2025-01-22T15:55:36 IST" name="Logout Function" finished-at="2025-01-22T15:55:43 IST" duration-ms="6896">
+      <class name="JAT.MiniProject2.LogoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f]" started-at="2025-01-22T15:55:36 IST" name="setUp" finished-at="2025-01-22T15:55:41 IST" duration-ms="4759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogoutButtonIsVisible()[pri:1, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f]" started-at="2025-01-22T15:55:41 IST" name="testLogoutButtonIsVisible" finished-at="2025-01-22T15:55:42 IST" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutButtonIsVisible -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f]" started-at="2025-01-22T15:55:42 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogoutButtonIsVisible status=SUCCESS method=LogoutTest.testLogoutButtonIsVisible()[pri:1, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="testLogoutRedirectsToLoginPage()[pri:2, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f]" started-at="2025-01-22T15:55:42 IST" name="testLogoutRedirectsToLoginPage" finished-at="2025-01-22T15:55:43 IST" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoutRedirectsToLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f]" started-at="2025-01-22T15:55:43 IST" name="tearDown" finished-at="2025-01-22T15:55:43 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f]" started-at="2025-01-22T15:55:43 IST" name="takeScreenshotOnFailure" finished-at="2025-01-22T15:55:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogoutRedirectsToLoginPage status=SUCCESS method=LogoutTest.testLogoutRedirectsToLoginPage()[pri:2, instance:JAT.MiniProject2.LogoutTest@2a5c8d3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+      </class> <!-- JAT.MiniProject2.LogoutTest -->
+    </test> <!-- Logout Function -->
+  </suite> <!-- Contact List App Suite -->
+</testng-results>

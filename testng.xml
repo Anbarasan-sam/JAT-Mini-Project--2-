@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Contact List App Suite">
+
+	<test name="Signup Function">
+		<groups>
+			<run>
+				<include name="Signup"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="JAT.MiniProject2.SignUpTest" />
+		</classes>
+	</test>
+	<test name="Login Fuunctionality">
+		<groups>
+			<run>
+				<include name="Login"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="JAT.MiniProject2.LoginTest" />
+		</classes>
+	</test>
+	<test name="Contact Addition">
+		<groups>
+			<run>
+				<include name="Contact"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="JAT.MiniProject2.ContactTests" />
+		</classes>
+	</test>
+	<test name="Contact Display">
+		<groups>
+			<run>
+				<include name="Contact Display"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="JAT.MiniProject2.ContactDisplayTest" />
+		</classes>
+	</test>
+	<test name="Contact Editing">
+		<groups>
+			<run>
+				<include name="Edit Contact"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="JAT.MiniProject2.ContactsEditingTest" />
+		</classes>
+	</test>
+	<test name="Contact Deletion Function">
+		<groups>
+			<run>
+				<include name="Contact Delete"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="JAT.MiniProject2.ContactDeletionTest">
+			</class>
+		</classes>
+	</test>
+		<test name="Logout Function">
+		<groups>
+			<run>
+				<include name="Logout"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="JAT.MiniProject2.LogoutTest">
+			</class>
+		</classes>
+	</test>
+</suite> 
